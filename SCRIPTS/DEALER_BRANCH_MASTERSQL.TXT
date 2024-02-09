@@ -1,0 +1,21 @@
+create table dealer_branch_master(branch_id number(6) constraint
+pk_branchid primary key,
+branch_name varchar2(30),
+branch_dno varchar2(30),
+branch_street varchar2(30),
+branch_city varchar2(30),
+branch_state varchar2(30),
+branch_country varchar2(30),
+branch_zip number(8),
+branch_region_id number(6) constraint fk16_brid references branch_reg_id(reg_id) on
+delete cascade,
+branch_phone1 number(15),
+branch_phone2 number(15),
+branch_fax number(15),
+branch_email varchar2(30),
+branch_contact_per_fname varchar2(30),
+branch_contact_per_mname varchar2(30),
+branch_contact_per_lname varchar2(30),
+branch_contact_per_ph number(16),
+dealer_id number(6) constraint fk17_did references vehicle_dealer_master(dealer_id) on delete cascade)
+/

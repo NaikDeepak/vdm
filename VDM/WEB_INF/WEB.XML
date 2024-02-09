@@ -1,0 +1,248 @@
+<web-app> 
+<servlet>
+	 <servlet-name>RegionController</servlet-name>
+	 <servlet-class>RegionController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>RegionController</servlet-name>
+	<url-pattern>/RegionController</url-pattern>
+</servlet-mapping>
+<servlet>
+	 <servlet-name>DepartmentController</servlet-name>
+	 <servlet-class>DepartmentController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>DepartmentController</servlet-name>
+	<url-pattern>/DepartmentController</url-pattern>
+</servlet-mapping>
+<servlet>
+	 <servlet-name>DesigMastController</servlet-name>
+	 <servlet-class>DesigMastController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>DesigMastController</servlet-name>
+	<url-pattern>/DesigMastController</url-pattern>
+</servlet-mapping>
+<servlet>
+	 <servlet-name>EmpDesigMastController</servlet-name>
+	 <servlet-class>EmpDesigMastController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>EmpDesigMastController</servlet-name>
+	<url-pattern>/EmpDesigMastController</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>FuelMastController</servlet-name>
+	 <servlet-class>FuelMastController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>FuelMastController</servlet-name>
+	<url-pattern>/FuelMastController</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>FuelSysMastController</servlet-name>
+	 <servlet-class>FuelSysMastController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>FuelSysMastController</servlet-name>
+	<url-pattern>/FuelSysMastController</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>VehColorMastController</servlet-name>
+	 <servlet-class>VehColorMastController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>VehColorMastController</servlet-name>
+	<url-pattern>/VehColorMastController</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>SubBrdFuelMastController</servlet-name>
+	 <servlet-class>SubBrdFuelMastController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>SubBrdFuelMastController</servlet-name>
+	<url-pattern>/SubBrdFuelMastController</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>SBFSysMastController</servlet-name>
+	 <servlet-class>SBFSysMastController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>SBFSysMastController</servlet-name>
+	<url-pattern>/SBFSysMastController</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>SBColorMastController</servlet-name>
+	 <servlet-class>SBColorMastController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>SBColorMastController</servlet-name>
+	<url-pattern>/SBColorMastController</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>DBVInventController</servlet-name>
+	 <servlet-class>DBVInventController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>DBVInventController</servlet-name>
+	<url-pattern>/DBVInventController</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>DBMastController</servlet-name>
+	 <servlet-class>DBMastController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>DBMastController</servlet-name>
+	<url-pattern>/DBMastController</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>ProfileMastController</servlet-name>
+	 <servlet-class>ProfileMastController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>ProfileMastController</servlet-name>
+	<url-pattern>/ProfileMastController</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>ProfileEmpMastController</servlet-name>
+	 <servlet-class>ProfileEmpMastController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>ProfileEmpMastController</servlet-name>
+	<url-pattern>/ProfileEmpMastController</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>SalesMastController</servlet-name>
+	 <servlet-class>SalesMastController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>SalesMastController</servlet-name>
+	<url-pattern>/SalesMastController</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	 <servlet-name>vehbrandController</servlet-name>
+	 <servlet-class>vehbrandController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>vehbrandController</servlet-name>
+	<url-pattern>/vehbrandController</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	 <servlet-name>sadController</servlet-name>
+	 <servlet-class>sadController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>sadController</servlet-name>
+	<url-pattern>/sadController</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	 <servlet-name>irController</servlet-name>
+	 <servlet-class>irController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>irController</servlet-name>
+	<url-pattern>/irController</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	 <servlet-name>pdController</servlet-name>
+	 <servlet-class>pdController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>pdController</servlet-name>
+	<url-pattern>/pdController</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+	 <servlet-name>purController</servlet-name>
+	 <servlet-class>purController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>purController</servlet-name>
+	<url-pattern>/purController</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	 <servlet-name>vmController</servlet-name>
+	 <servlet-class>vmController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>vmController</servlet-name>
+	<url-pattern>/vmController</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	 <servlet-name>dmController</servlet-name>
+	 <servlet-class>dmController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>dmController</servlet-name>
+	<url-pattern>/dmController</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+	 <servlet-name>vehsfControler</servlet-name>
+	 <servlet-class>vehsfControler</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>vehsfControler</servlet-name>
+	<url-pattern>/vehsfControler</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+	 <servlet-name>vehfeatController</servlet-name>
+	 <servlet-class>vehfeatController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>vehfeatController</servlet-name>
+	<url-pattern>/vehfeatController</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>vehdealerController</servlet-name>
+	 <servlet-class>vehdealerController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>vehdealerController</servlet-name>
+	<url-pattern>/vehdealerController</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	 <servlet-name>vehsubbrandController</servlet-name>
+	 <servlet-class>vehsubbrandController</servlet-class>
+ </servlet>
+<servlet-mapping>
+	<servlet-name>vehsubbrandController</servlet-name>
+	<url-pattern>/vehsubbrandController</url-pattern>
+</servlet-mapping>
+<welcome-file-list>
+<welcome-file>frames.htm</welcome-file>
+</welcome-file-list>
+</web-app>

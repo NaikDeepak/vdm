@@ -1,0 +1,87 @@
+<%@ page language="java"%>
+<%@ page import="java.sql.*,java.io.*"%>
+<%! int id=0; %>
+<%! int pid=0; %>
+<%! int sbid=0; %>
+<%! int pcost=0; %>
+<%! int sbqty=0; %>
+<html>
+<head>
+<title>Purchase Details Insert</title>
+</head>
+<body bgcolor="#FFFFE6">
+<form method="POST" action="pur_det_result1.jsp"> 
+  <div align="center">
+    <center>
+     <table border="0" width="100%" color="" height="30">
+    <tr>
+      <td width="100%" bgcolor="#820082">
+        <p align="center"><b><font face="Verdana" size="3" color="#FFFFE6">Purchase Details Insert </font></b></td>
+    </tr>
+  </table>
+    </center>
+  </div>
+  <a href="purchase_details_home.jsp" style="color: #660066; font-family: Verdana; font-size: 8pt; font-weight: bold">Back</a>
+  <p>&nbsp;</p>
+  <table border="0" width="100%">
+    <tr>
+      <td width="50%" align="right"><font color="#800080" face="Verdana" size="2"><b>Purchase
+        NO</b></font></td>
+      <td width="50%"><font color="#800080"><select size="1" name="D1">
+	   <%
+     Connection con=null;
+	 Statement st=null;
+	  ResultSet rs=null;	
+	  pid=Integer.parseInt(request.getParameter("D1"));
+	  try{
+	 
+ Class.forName("oracle.jdbc.driver.OracleDriver");
+  con=DriverManager.getConnection("jdbc:oracle:thin:@server:1521:server","vdm","vdm");
+  st=con.createStatement();
+ rs=st.executeQuery("select * from PURCHASE_DETAILS where PURCHASE_NO="+pid);
+ while(rs.next())
+{
+   id=rs.getInt(1);
+   sbid=rs.getInt(2);
+   pcost=rs.getInt(3);
+   sbqty=rs.getInt(4);
+}
+  
+       %>
+   <option><%=id%></option>
+
+<%}
+catch(Exception e)
+{}
+%>
+        </select></font></td>
+    </tr>
+    <tr>
+      <td width="50%" align="right"><font color="#800080" face="Verdana" size="2"><b>Sub
+        Brand ID</b></font></td>
+      <td width="50%"><font color="#800080"><select size="1" name="D2">	   
+              <option><%=sbid%></option>
+        </select></font></td>
+    </tr>
+    <tr>
+      <td width="50%" align="right"><font color="#800080" face="Verdana" size="2"><b>Purchase
+        Cost</b></font></td>
+      <td width="50%"><font color="#800080"><input type="text" name="T1" size="20" value="<%=pcost%>"></font></td>
+    </tr>
+    <tr>
+      <td width="50%" align="right"><font color="#800080" face="Verdana" size="2"><b>Sub
+        Brand Qty</b></font></td>
+      <td width="50%"><font color="#800080"><input type="text" name="T2" size="20" value="<%=sbqty%>"></font></td>
+    </tr>
+    <tr>
+      <td width="50%" align="right">&nbsp;        
+        <p>&nbsp;</p>
+        <p><font color="#800080" face="Verdana" size="2"><b><input type="submit" value="Update" name="submit" tabindex="5" style="color: #800080"></b></font></td>
+      <td width="50%"></td>
+    </tr>
+  </table>
+</form>
+
+</body>
+
+</html>
